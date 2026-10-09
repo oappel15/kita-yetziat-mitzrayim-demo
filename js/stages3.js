@@ -110,8 +110,8 @@ class Stage6 extends BaseStage{constructor(){super('Stage6');}
 class Stage6b extends Runner{constructor(){super('Stage6b');}
  create(){this.retryScene='Stage6b';A.music('tense');this.gap=560;
   K.sky(this,0x0c1436,0x24305e);this.stars(60,120);
-  this.wall=this.par('waterWall',60,420,.85);this.foam=this.par('foam',36,40,.85,{drift:.06});
-  this.fish=[];for(let k=0;k<16;k++){const f=this.add.image(400+k*520+Math.random()*200,140+Math.random()*260,'fish'+(k%2)).setScrollFactor(.85).setAlpha(.75).setScale(.7+Math.random()*.5);
+  this.wall=this.par('waterWall',96,470,.85);this.foam=this.par('foam',72,40,.85,{drift:.06});
+  this.fish=[];for(let k=0;k<16;k++){const f=this.add.image(400+k*520+Math.random()*200,170+Math.random()*300,'fish'+(k%2)).setScrollFactor(.85).setAlpha(.75).setScale(.7+Math.random()*.5);
    this.tweens.add({targets:f,x:f.x+(Math.random()<.5?-1:1)*120,duration:3000+Math.random()*2000,yoyo:true,repeat:-1,ease:'Sine.InOut',onYoyo:()=>f.toggleFlipX(),onRepeat:()=>f.toggleFlipX()});}
   this.add.particles(0,0,'dot',{x:{min:0,max:W},y:470,speedY:{min:-80,max:-30},lifespan:5000,scale:{start:.15,end:.05},alpha:{start:.5,end:0},frequency:120}).setScrollFactor(0);
   for(let k=0;k<5;k++){const r=this.add.image(200+k*260,60,'streak').setScrollFactor(0).setOrigin(0,.5).setAngle(80+k*3).setScale(6,4).setAlpha(.05).setBlendMode('ADD');}
