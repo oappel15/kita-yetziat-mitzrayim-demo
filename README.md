@@ -8,3 +8,5 @@
 - `credits.html` – קרדיטים
 - `js/` – art (איורים), audio (צלילים), data (טקסטים ושאלות), core, stages1–3, main
 - `vendor/phaser.min.js` – Phaser 3.80.1 (MIT)
+
+באוויר: https://kita-yetziat-mitzrayim.vercel.app
